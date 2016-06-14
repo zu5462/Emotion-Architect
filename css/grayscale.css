@@ -50,6 +50,10 @@ a {
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
+footer{
+    background: #ededed;
+
+}
 
 a:hover,
 a:focus {
@@ -57,28 +61,39 @@ a:focus {
     color: #1d9b6c;
 }
 
+#artist{
+    background:#13181c;
+    width: 100vw;
+    height: 60em;
+}
 .back {
     height:90vh;
     width: 100vw;
-    background: url(../img/back.jpg) no-repeat bottom center scroll ;
+    background: url(../img/pexels-photo-2.jpg) no-repeat bottom center scroll ;
 }
+
+#portfoliohead {
+    color: #000;
+}
+
 .team-member {
-font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .team-member img {
   margin: 0 auto;
 }
 .team-member h4 {
  font-family: 'Noto Sans TC', sans-serif;
- font-weight: 400;
+ font-weight: 500;
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
 }
 .team-member p {
   margin-top: 0;
+  font-size: 16px
 }
 
 .left { 
@@ -104,15 +119,13 @@ font-family: 'Noto Sans TC', sans-serif;
  #about{
     width: 100vw;
     height: 100vh;
-    background: #000;
+    background: #1a1b1d;
 }
+
 .tocenter {
 height: 25vh;
  }
 
-.tocenter2 {
-height: 20vh;
- }
 
 .hoverp{
     opacity: 0.5;
@@ -209,7 +222,7 @@ height: 20vh;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/pexels-photo.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -223,15 +236,20 @@ height: 20vh;
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 20px;
-font-family: 'Noto Sans TC', sans-serif;
-
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#brand-heading {
+    font-size: 28px;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 30px;
+    font-size: 40px;
  font-family: 'Noto Sans TC', sans-serif;
 
+}
+
+.ptext{
+color:#000;
 }
 
 @media(min-width:768px) {
@@ -244,9 +262,9 @@ font-family: 'Noto Sans TC', sans-serif;
         font-size: 30px;
     }
 
-    .intro .intro-body .intro-text {
-        font-size: 40px;
-        font-family: 'Noto Sans TC', sans-serif;
+    .intro-text {
+        font-size:40px;
+               font-family: 'Noto Sans TC', sans-serif;
 
     }
 }
@@ -326,7 +344,7 @@ font-family: 'Noto Sans TC', sans-serif;
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 7em;
 }
 
 
