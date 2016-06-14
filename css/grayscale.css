@@ -28,6 +28,7 @@ h6 {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    border-style: none;
 }
 
 p {
@@ -52,6 +53,8 @@ a {
 }
 footer{
     background: #ededed;
+    padding: 5em 0;
+    border-style: none;
 
 }
 
@@ -393,12 +396,9 @@ ul.banner-social-buttons {
     }
 }
 
-footer {
-    padding: 50px 0;
-}
-
 footer p {
     margin: 0;
+
 }
 
 ::-moz-selection {
