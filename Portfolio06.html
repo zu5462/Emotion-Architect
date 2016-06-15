@@ -18,18 +18,32 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <audio  id="mp3" src="music/scare.mp3" autoplay loop></audio> 
+
 </head>
 
 <body>
-    <!-- Navigation -->
+<!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html#portfolio">Back</a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html#portfolio">Back</a>
+                    </li>
+                    <li>
+                        <a id ="music6" href="#">Mute</a>
+                    </li>
+                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -112,6 +126,14 @@
         $('#mimg').attr('src', bg);
         $('#myModal').modal('show');
     });
+      $('#music6').click(function(){
+            $("#mp3").prop("muted",!$("#mp3").prop("muted"));
+            if($('#music6').text()=="Mute"){
+            $('#music6').text("Play");          
+        }else{
+            $('#music6').text("Mute");          
+        }
+        })
     </script>
 </body>
 

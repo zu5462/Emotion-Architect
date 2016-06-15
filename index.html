@@ -44,6 +44,9 @@
                     <li>
                         <a class="page-scroll" href="#artist">Designer</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" id="idmusic" href="#" onClick="return false;">Mute</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -67,6 +70,7 @@
                 </div>
             </div>
         </div>
+        <audio  id="mp3" src="music/index.mp3" autoplay loop></audio> 
     </header>
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -196,6 +200,16 @@
     <script src="js/jquery.easing.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    <script type="text/javascript">
+        $('#idmusic').click(function(){
+            $("#mp3").prop("muted",!$("#mp3").prop("muted"));
+            if($('#idmusic').text()=="Mute"){
+            $('#idmusic').text("Play");          
+        }else{
+            $('#idmusic').text("Mute");          
+        }
+        })
+    </script>
 </body>
 
 </html>
