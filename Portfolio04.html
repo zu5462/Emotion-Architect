@@ -112,7 +112,7 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
-    $('div .fill.img-responsive .bg').on('click', function() {
+    $('div .fill.img-responsive.bg').on('click', function() {
         var bg = $(this).css('background-image');
         bg = bg.replace('url(', '').replace(')', '');
         $('#mimg').attr('src', bg);

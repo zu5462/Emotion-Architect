@@ -120,7 +120,7 @@
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({})
-    $('div .fill.img-responsive bg').on('click', function() {
+    $('div .fill.img-responsive.bg').on('click', function() {
         var bg = $(this).css('background-image');
         bg = bg.replace('url(', '').replace(')', '');
         $('#mimg').attr('src', bg);
