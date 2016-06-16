@@ -68,13 +68,13 @@
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill img-responsive" style="background-image:url('Portfolio/5/M33.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/5/M33.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill img-responsive" style="background-image:url('Portfolio/5/winter.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/5/winter.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -120,7 +120,7 @@
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({})
-    $('div .fill.img-responsive').on('click', function() {
+    $('div .fill.img-responsive bg').on('click', function() {
         var bg = $(this).css('background-image');
         bg = bg.replace('url(', '').replace(')', '');
         $('#mimg').attr('src', bg);

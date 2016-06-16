@@ -69,24 +69,24 @@
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill img-responsive" style="background-image:url('Portfolio/2/day8.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/2/day8.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill img-responsive" id="post" style="background-image:url('Portfolio/2/postcardforPAMUN.png');"></div>
+                <div class="fill img-responsive bg" id="post" style="background-image:url('Portfolio/2/postcardforPAMUN.png');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill img-responsive" style="background-image:url('Portfolio/2/prayforpariscolor.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/2/prayforpariscolor.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <div class="fill img-responsive" style="background-image:url('Portfolio/2/d.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/2/d.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -119,7 +119,7 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
-    $('div .fill.img-responsive').on('click', function() {
+    $('div .fill.img-responsive .bg').on('click', function() {
         var bg = $(this).css('background-image');
         bg = bg.replace('url(', '').replace(')', '');
         $('#mimg').attr('src', bg);

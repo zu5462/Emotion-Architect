@@ -68,18 +68,18 @@
             </div>
           <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill img-responsive" style="background-image:url('Portfolio/4/IMG_4227.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/4/IMG_4227.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill img-responsive" style="background-image:url('Portfolio/4/IMG_4445.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/4/IMG_4445.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <div class="fill img-responsive" style="background-image:url('Portfolio/4/saf.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/4/saf.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -112,7 +112,7 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
-    $('div .fill.img-responsive').on('click', function() {
+    $('div .fill.img-responsive .bg').on('click', function() {
         var bg = $(this).css('background-image');
         bg = bg.replace('url(', '').replace(')', '');
         $('#mimg').attr('src', bg);

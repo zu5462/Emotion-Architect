@@ -71,23 +71,23 @@
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill img-responsive" style="background-image:url('Portfolio/6/1.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/6/1.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill img-responsive" style="background-image:url('Portfolio/6/2.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/6/2.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <div class="fill img-responsive" style="background-image:url('Portfolio/6/555.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/6/555.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <div class="fill img-responsive" style="background-image:url('Portfolio/6/4.jpg');"></div>
+                <div class="fill img-responsive bg" style="background-image:url('Portfolio/6/4.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -120,7 +120,7 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
-    $('div .fill.img-responsive').on('click', function() {
+    $('div .fill.img-responsive .bg').on('click', function() {
         var bg = $(this).css('background-image');
         bg = bg.replace('url(', '').replace(')', '');
         $('#mimg').attr('src', bg);
