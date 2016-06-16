@@ -122,11 +122,13 @@
     $('.carousel').carousel({})
     $('div .fill.img-responsive.bg').on('click', function() {
         var bg = $(this).css('background-image');
-        bg = bg.replace('url','').replace('("','').replace('")',''); 
+        bg = bg.replace('url','');
+        bg = bg.replace('("','');
+        bg = bg.replace('")',''); 
         $('#mimg').attr('src', bg);
         $('#myModal').modal('show');
     });
-    
+
     $('#glass').click(function() {
         if ($("#glass").get(0).paused) {
             $("#glass").get(0).play();
