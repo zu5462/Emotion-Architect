@@ -138,7 +138,7 @@
     $('div .fill.img-responsive.bg').on('click',function()
             {
                 var bg = $(this).css('background-image');
-        bg = bg.replace('url','').replace('(','').replace(')',''); 
+        bg = bg.replace('url','').replace('("','').replace('")',''); 
                 $('#mimg').attr('src',bg);
                 $('#myModal').modal('show');
             });
